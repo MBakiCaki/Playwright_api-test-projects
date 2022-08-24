@@ -22,4 +22,3 @@ test.describe('Response validation', () => {
         }
     });
 })
-
