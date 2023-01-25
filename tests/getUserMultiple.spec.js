@@ -2,7 +2,7 @@
 // test for multiple users
 const {test, expect } = require('@playwright/test');
 let baseurl = 'https://reqres.in/api/users/'
-test.describe('Response validation', () => {
+test.describe('List all Users', () => {
     
     var response_body = [];
     test('GET API call', async({ request }) => {
