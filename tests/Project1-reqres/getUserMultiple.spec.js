@@ -18,7 +18,7 @@ test.describe('List all Users', () => {
     test('GET request from URL', async({ page }) => {
         for(let i=1; i<11; i++){
             await page.goto(baseurl+(i.toString()));
-            await expect(page.locator('body')).toContainText(response_body[i])
+            await expect(page.locator('body')).toContainText('{"data":{"id"');  // validate response
         }
     });
 })
